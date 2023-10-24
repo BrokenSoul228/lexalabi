@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/linearFragment">
+
+    <fragment
+        android:id="@+id/linearFragment"
+        android:name="com.example.lexalabi.LinearFragment"
+        android:label="fragment_linear"
+        tools:layout="@layout/fragment_linear" >
+        <action
+            android:id="@+id/action_linearFragment_to_relativeFragment5"
+            app:destination="@id/relativeFragment5" />
+    </fragment>
+    <fragment
+        android:id="@+id/relativeFragment5"
+        android:name="com.example.lexalabi.RelativeFragment"
+        android:label="RelativeFragment" >
+        <action
+            android:id="@+id/action_relativeFragment5_to_tabFragment"
+            app:destination="@id/tabFragment" />
+        <action
+            android:id="@+id/action_relativeFragment5_to_webFragment"
+            app:destination="@id/webFragment" />
+        <action
+            android:id="@+id/action_relativeFragment5_to_listFragment"
+            app:destination="@id/listFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tabFragment"
+        android:name="com.example.lexalabi.TabFragment"
+        android:label="fragment_tab"
+        tools:layout="@layout/fragment_tab" />
+    <fragment
+        android:id="@+id/webFragment"
+        android:name="com.example.lexalabi.WebFragment"
+        android:label="fragment_web"
+        tools:layout="@layout/fragment_web" />
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.example.lexalabi.ListFragment"
+        android:label="fragment_list"
+        tools:layout="@layout/fragment_list" />
+</navigation>
